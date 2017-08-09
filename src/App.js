@@ -88,7 +88,7 @@ class App extends Component {
               <ul>
                 {makeList(weapons).map(weapon =>
                   <li key={weapon.key} style={{ marginBottom: 10 }}>
-                    Name or something: <b>{weapon.name}</b>
+                    Name : <b>{weapon.name}</b>
                     <br /> Damage :
                     {" "}
                     <span style={{ color: "blue" }}>{weapon.damage}</span>
