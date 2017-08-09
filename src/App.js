@@ -89,7 +89,7 @@ class App extends Component {
                 {makeList(weapons).map(weapon =>
                   <li key={weapon.key} style={{ marginBottom: 10 }}>
                     Name: <b>{weapon.name}</b>
-                    <br /> Damage:
+                    <br /> Damage :
                     {" "}
                     <span style={{ color: "blue" }}>{weapon.damage}</span>
                   </li>
@@ -100,7 +100,7 @@ class App extends Component {
                 ? <p style={{ color: "red" }}>{typer} is typing...</p>
                 : <div />}
               <form onSubmit={this.handleSubmit}>
-                Weapon Name:<input
+                Weapon Name :<input
                   ref="nameInput"
                   value={weaponNameValue}
                   onChange={this.handleChange("weaponNameValue")}
